@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "SINIIAJA/SINIIAJA:latest"
-        DOCKER_CONTAINER = "SINIIAJA"
+        DOCKER_IMAGE = "siniiaja/siniiaja:latest"
+        DOCKER_CONTAINER = "siniiaja_project"
         PORT_MAPPING = "8089:80"
     }
 
