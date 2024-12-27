@@ -10,7 +10,7 @@ pipeline {
         stage("clone repository"){
             steps{
                 deleteDir()
-                checkout([$class: gitSCM, branches:[name: "master"], userRemoteConfigs: [url: "https://github.com/FallAPI/SINIIAJA-Website.git"]])
+                checkout([$class: GitSCM, branches:[name: "master"], userRemoteConfigs: [url: "https://github.com/FallAPI/SINIIAJA-Website.git"]])
             }
         }
         stage("build Docker Image"){
